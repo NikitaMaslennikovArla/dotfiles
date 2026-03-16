@@ -86,11 +86,25 @@ Reviews interfaces against universal UX best practices and applies fixes directl
 
 ## arla-ux-subagent
 **Scope:** Arla projects only (project-level at `/workspaces/Arla_Projects/`)
-**Invocation:** Manual only
+**Invocation:** Manual — first step in the UX/UI review pipeline
 
-Same as ux-reviewer but with full Arla Foods CVI awareness: official color palette, Segoe UI typography, and Arla's clean/functional visual tone. Applies fixes directly and includes an Arla CVI notes section in its output.
+Owns the user experience layer: journeys, information architecture, copy clarity, interaction patterns (empty/loading/error states), and accessibility. Does not touch visual styling or brand compliance. Hand-off notes in output direct the UI Designer and Graphic Designer to what needs attention next.
 
-**Example:** `"use the arla-ux-subagent on RedesignScreen"`
+**Pipeline position:** `arla-ux-subagent` → `arla-ui-designer` → `arla-graphic-designer`
+
+**Example:** `"use the arla-ux-subagent on the Redesign screen"`
+
+---
+
+## arla-ui-designer
+**Scope:** Arla projects only (project-level at `/workspaces/Arla_Projects/`)
+**Invocation:** Manual — second step in the UX/UI review pipeline
+
+Owns interface and component quality: spacing grid (4px scale), typography application, component states (hover, active, focus, disabled, loading), responsive behaviour, and correct application of Arla CVI tokens. Bridges UX decisions and brand compliance. Includes hand-off notes for the Graphic Designer.
+
+**Pipeline position:** `arla-ux-subagent` → `arla-ui-designer` → `arla-graphic-designer`
+
+**Example:** `"use the arla-ui-designer on QuickCaptureScreen"`
 
 ---
 
