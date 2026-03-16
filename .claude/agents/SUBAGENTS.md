@@ -91,3 +91,13 @@ Reviews interfaces against universal UX best practices and applies fixes directl
 Same as ux-reviewer but with full Arla Foods CVI awareness: official color palette, Segoe UI typography, and Arla's clean/functional visual tone. Applies fixes directly and includes an Arla CVI notes section in its output.
 
 **Example:** `"use the arla-ux-subagent on RedesignScreen"`
+
+---
+
+## arla-graphic-designer
+**Scope:** Arla projects only (user-level)
+**Invocation:** Automatic — triggered after any UI or visual change in Arla projects
+
+Senior graphic designer with Arla CVI expertise. Reviews and directly fixes UI component styling, layout and composition, and digital asset usage against the official Arla palette (`#02462F` dark green through `#FFD115` yellow), Segoe UI typography, and brand principles (clean, green-first, generous whitespace, soft shadows, rounded corners). Outputs a summary of brand issues fixed, layout corrections, and any remaining recommendations requiring design decisions.
+
+**Example:** `"use the arla-graphic-designer after the last UI changes"`
